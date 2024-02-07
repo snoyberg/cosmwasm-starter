@@ -1,0 +1,16 @@
+[package]
+name = "cosmwasm-starter"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+cosmwasm-std = { version = "1" }
+cw-storage-plus = "1.2.0"
+serde = { version = "1.0.193", features = ["derive"] }
+thiserror = "1.0.50"
+
+[dev-dependencies]
+cw-multi-test = "0.20.0"
